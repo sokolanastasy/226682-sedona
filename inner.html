@@ -22,6 +22,7 @@
 
 
   <main class="container">
+    <h2 class="visually-hidden">Фильтр поиска жилья</h2>
     <h3>Инфраструктура:</h3>
     <ul class="filters">
       <li>
@@ -35,6 +36,24 @@
       <li>
         <input type="checkbox" name="options" id="options-field">
         <label for="options-field">Wi-fi</label>
+      </li>
+    </ul>
+
+
+
+    <h3>Тип жилья:</h3>
+    <ul class="filters">
+      <li>
+        <input type="checkbox" name="options" id="options-field" checked>
+        <label for="options-field">Гостиница</label>
+      </li>
+      <li>
+        <input type="checkbox" name="options" id="options-field" checked>
+        <label for="options-field">Мотель</label>
+      </li>
+      <li>
+        <input type="checkbox" name="options" id="options-field" checked>
+        <label for="options-field">Апартаменты</label>
       </li>
     </ul>
 
@@ -75,8 +94,9 @@
 
 
     <ul class="results">
+      <h2 class="visually-hidden">Результаты поиска по фильтрам</h2>
       <li class="results-item">
-        <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
+        <img src="img/amara.jpg" width="135" height="90" alt="Гостиница «Amara Resort & Spa»">
         <div class="desciption">
           <h2 class="title">Amara Resort & Spa</h2>
           <div class="detail-desciption">
@@ -98,7 +118,7 @@
         </div>
       </li>
       <li class="results-item">
-        <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+        <img src="img/desert.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
         <div class="desciption">
           <h2 class="title">Desert Quail Inn</h2>
           <div class="detail-desciption">
@@ -120,7 +140,7 @@
         </div>
       </li>
       <li class="results-item">
-        <img src="img/villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
+        <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты «Villas At Poco Diablo»">
         <div class="desciption">
           <h2 class="title">Villas At Poco Diablo</h2>
           <div class="detail-desciption">
@@ -150,9 +170,9 @@
     <p>#VisitSedona</p>
     <div>
       <ul class="footer-social">
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютьюб</a></li>
+        <li><a class="social-button" href="#" aria-label="Подписывайтесь на нас в Твиттере">Твиттер</a></li>
+        <li><a class="social-button" href="#" aria-label="Подписывайтесь на нас в Фейсбуке">Фейсбук</a></li>
+        <li><a class="social-button" href="#" aria-label="Подписывайтесь на нас в Ютьюбе">Ютьюб</a></li>
       </ul>
     </div>
     <p class="footer-copyright">

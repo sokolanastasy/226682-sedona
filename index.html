@@ -8,6 +8,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
+        <p class="visually-hidden"></p>
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип «Седона»">
       </a>
       <ul class="site-navigation">
@@ -22,6 +23,7 @@
 
 
   <main class="content">
+    <h1 class="visually-hidden">Город Седона</h1>
     <img src="img/inscription.png" width="459" height="353" alt="Добро пожаловать">
     <div class="promo">
       <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -31,6 +33,7 @@
 
 
     <div class="advantage-description">
+      <h2 class="visually-hidden">Преимущества</h2>
       <h2>Настоящий городок</h2>
       <p>—№1—</p>
       <p>Седона — не аттракцион для туристов, там течет своя жизнь!</p>
@@ -100,38 +103,51 @@
       <h2>Поиск гостиницы в Седоне</h2>
       <ul class="search">
         <li>
-          <label>Дата заезда:</label>
-          <input class="date" type="text" placeholder="24 апреля 2017">
+          <label for="input-date" id="label-date">Дата заезда:</label>
+          <input class="date" type="date" id="input-date" placeholder="24 апреля 2017" aria-labelledby="label-date">
         </li>
         <li>
-          <label>Дата выезда:</label>
-          <input class="date" type="text" placeholder="4 июля 2017">
+          <label for="input-date" id="label-date">Дата выезда:</label>
+          <input class="date" type="date" id="input-date" placeholder="4 июля 2017" aria-labelledby="label-date">
         </li>
       </ul>
       <p>Взрослые:
-        2
+        <button class="btn" type="submit">-</button>
+        <input type="button" value="2">
+        <button class="btn" type="submit">+</button>
         Дети:
-        0</p>
-        <input type="button" value="Найти">
-      </section>
-      <img src="img/map.jpg" width="1718" height="748" alt="Карта">
-    </main>
-
-
-
-    <footer class="main-footer">
-      <p>#VisitSedona</p>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Твиттер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютьюб</a></li>
-      </ul>
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a href="img.jpg">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «HTMLAcademy»">
-        </a>
+        <button class="btn" type="submit">-</button>
+        <input type="button" value="0">
+        <button class="btn" type="submit">+</button>
       </p>
-    </footer>
-  </body>
-  </html>
+      <input type="button" value="Найти">
+    </section>
+
+
+
+    <section class="map">
+      <h2 class="visually-hidden">Как добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="1718" height="748" alt="Карта">
+      </p>
+    </section>
+  </main>
+
+
+
+  <footer class="main-footer">
+    <p>#VisitSedona</p>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#" aria-label="Подписывайтесь на нас в Твиттере">Твиттер</a></li>
+      <li><a class="social-button" href="#" aria-label="Подписывайтесь на нас в Фейсбуке">Фейсбук</a></li>
+      <li><a class="social-button" href="#" aria-label="Подписывайтесь на нас в Ютьюбе">Ютьюб</a></li>
+    </ul>
+    <p class="footer-copyright">
+      <b>Website by</b>
+      <a href="img.jpg">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип «HTMLAcademy»">
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
