@@ -94,7 +94,8 @@ a {
   color: #cacaca;
 }
 
-.advantage-description {
+.advantage-description-city,
+.advantage-description-bridge {
     background-color: #81b3d2;
     color: #ffffff;
 }
@@ -324,4 +325,76 @@ h3 {
   color: #000000;
 
   background: #ffffff;
+}
+
+
+/* ----- Сеточные стили ----- */
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 72px;
+  order: 2;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation li:nth-child(2n) {
+  margin-right: 165px;
+}
+
+.background-image {
+  background-image: url("img/inscription.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-item {
+  width: 400px;
+  padding: 50px;
+}
+
+.tag {
+  width: 240px;
+  margin-right: 88px;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-copyright {
+  width: 241px;
+  margin: 0;
+  margin-left: auto;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.filter {
+  display: flex;
 }
