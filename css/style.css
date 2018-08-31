@@ -371,9 +371,7 @@ h3 {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
+
 }
 
 .site-navigation li:nth-child(2n) {
@@ -382,7 +380,6 @@ h3 {
 
 .background-image {
   background-image: url("img/welcome.jpg");
-  width: 1200px;
   height: 510px;
   margin: 0 auto;
 }
@@ -428,15 +425,13 @@ h3 {
   display: flex;
 }
 
-.content {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
 
 .main-footer {
   justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .advantage-description {
@@ -444,8 +439,10 @@ h3 {
 }
 
 .description {
-  width: 400px;
-  text-align: center;
+  width: 900px;
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 .map {
@@ -558,8 +555,50 @@ img {
 }
 
 .desciption {
-
-  width: 900px;
+  margin-right: auto;
   display: flex;
-  margin-left: auto;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 30px;
+}
+
+.filters {
+  background-image: url("img/blurred.jpg");
+  height: 217px;
+}
+
+
+
+
+
+/* Всплывающая форма */
+
+.appointment {
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.modal {
+  top: 500px;
+  left: 50%;
+  width: 570px;
+  margin-left: -230px;
+}
+
+.find {
+  width: 80%;
+  margin-right: 0;
+}
+
+.title {
+  width: 100%;
+}
+
+
+.sorting  h2,
+.sorting p,
+.breadcrumbs {
+  margin: 0;
 }
