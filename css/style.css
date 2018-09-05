@@ -38,8 +38,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.main-navigation,
-b {
+.main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -78,9 +77,10 @@ b {
   text-align: center;
 }
 
-.feature-item p {
-  font-size: 12px;
-  line-height: 18px;
+.promo {
+  background-image: url("../img/welcome.jpg");
+  height: 510px;
+  margin: 0 auto;
 }
 
 .sorting-item {
@@ -125,6 +125,22 @@ b {
     color: #ffffff;
 }
 
+.description h2 {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.description p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.description p:nth-child(2n) {
+  margin: 0;
+  text-align: center;
+}
+
 .feature-choice,
 .feature-quality,
 .feature-safety {
@@ -136,6 +152,9 @@ h3 {
   line-height: 21px;
 }
 
+.features-list p {
+  color: #333333;
+}
 
 .appointment {
     font-weight: 700;
@@ -187,20 +206,41 @@ h3 {
     background-color: #f2f2f2;
 }
 
-.find,
 .detail-desciption a {
    background-color: #81b3d2;
    color: #ffffff;
    font-weight: 700;
 }
 
-.find,
 .detail-desciption a:hover {
   background-color: #669ec0;
 }
 
-.find,
 .detail-desciption a:active {
+  color: #94b9d2;
+  background-color: #5496bd;
+}
+
+.find {
+  justify-content: center;
+  align-items: center;
+  width: 458px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+
+.find {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.find:hover {
+  background-color: #669ec0;
+}
+
+.find:active {
   color: #94b9d2;
   background-color: #5496bd;
 }
@@ -212,6 +252,12 @@ h3 {
 
 .main-footer p {
     font-weight: 700;
+}
+
+.footer-copyright b {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .footer-social {
@@ -359,7 +405,6 @@ h3 {
 .main-navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .main-header-logo {
@@ -371,17 +416,29 @@ h3 {
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
 
+.main-screen h2 {
+  margin-bottom: 39px;
+}
+
+.main-screen p {
+  margin-bottom: 57px;
+}
+
+.feedback {
+  margin-top: 58px;
+}
+
+.feedback h2{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .site-navigation li:nth-child(2n) {
   margin-right: 100px;
-}
-
-.background-image {
-  background-image: url("img/welcome.jpg");
-  height: 510px;
-  margin: 0 auto;
 }
 
 .features-list {
@@ -409,7 +466,8 @@ h3 {
 .footer-copyright {
   width: 241px;
   margin: 0;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
@@ -423,6 +481,7 @@ h3 {
 
 .sorting {
   display: flex;
+  padding: 0 73px;
 }
 
 .container {
@@ -431,22 +490,31 @@ h3 {
 }
 
 .main-footer {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .advantage-description {
   display: flex;
+  width: 800px;
+  height: 256px;
+}
+
+.main-screen {
+  text-align: center;
 }
 
 .description {
-  width: 900px;
+  width: 400px;
   display: flex;
-  margin-left: auto;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 47px 65px 47px;
 }
 
 .map {
-  background-image: url("img/map.jpg");
+  background-image: url("../img/map.jpg");
 }
 
 .appointment {
@@ -481,11 +549,6 @@ h3 {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-
-
-
-
-
 
 /* ----- Декоративные элементы ----- */
 img {
@@ -547,7 +610,7 @@ img {
 }
 
 .rating-list {
-  float: right;
+  margin-left: auto;
 }
 
 .results-item {
@@ -555,8 +618,8 @@ img {
 }
 
 .desciption {
-  margin-right: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs li {
@@ -565,40 +628,27 @@ img {
 }
 
 .filters {
-  background-image: url("img/blurred.jpg");
+  background-image: url("../img/blurred.jpg");
   height: 217px;
+  padding: 0 73px;
 }
-
-
-
 
 
 /* Всплывающая форма */
-
-.appointment {
-  position: fixed;
-  background-color: #ffffff;
-}
-
-.modal {
-  top: 500px;
-  left: 50%;
-  width: 570px;
-  margin-left: -230px;
-}
-
-.find {
-  width: 80%;
-  margin-right: 0;
-}
-
 .title {
   width: 100%;
 }
-
 
 .sorting  h2,
 .sorting p,
 .breadcrumbs {
   margin: 0;
+}
+
+
+.button {
+  justify-content: center;
+  align-items: center;
+  width: 109px;
+  padding: 8px;
 }
